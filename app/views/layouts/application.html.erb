@@ -1,16 +1,42 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Portfolio</title>
-  <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,500,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+  <head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <!-- Fixed navbar -->
+  <body>
+    <div id="wrap">
+      <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><%= link_to "Home", "/" %></li>
+              <li><%= link_to "Portfolio", "/portfolio" %></li>
+              <li><%= link_to "Blog", "https://gmdsgn.tumblr.com/" %></li>
+              <li><%= link_to "About", "/about" %></li>
+            </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </div>
+        <div class="container">
+          <%= yield %>
+        </div>
+      </div>
+    </body>
+    <div id="footer">
+      <div class="container">
+        <p class="text-muted credit"><i class="fa fa-copyright"></i> Nicu Listana 2015
+          <!-- <p>Made <i class="fa fa-heart"></i> using  ruby on rails :)</p> -->
+          <span class="pull-right">
+            <%= link_to '<i class="fa fa-facebook fa-2x"></i>'.html_safe, "https://facebook.com/apebeast", title: "View Nicu's Facebook Profile" %>
+            <%= link_to '<i class="fa fa-twitter fa-2x"></i>'.html_safe, "https://twitter.com/apebeast", title: "View Nicu's Twitter Profile" %>
+            <%= link_to '<i class="fa fa-camera-retro fa-2x"></i>'.html_safe, "https://instagram.com/apebeast", title: "View Nicu's Instagram Profile" %>
+            <%= link_to '<i class="fa fa-github fa-2x"></i>'.html_safe, "https://github.com/niculistana", title: "View Nicu's Github Profile" %>
+          <%= link_to '<i class="fa fa-linkedin fa-2x"></i>'.html_safe, "https://linkedin.com/in/niculistana", title: "View Nicu's LinkedIn Profile" %><br/><small class="text-muted">Made with <i class="fa fa-heart"></i> using Rails 4.x</small></span></p>
+      </div>
+    </div>
 </html>
