@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<h1>
+  <%= @project.projectName %>
+</h1>
+<div class="tags">
+  <div class="card ">
+    <%= image_tag @project.projectImage %>
+  </div>
+</div>
+
+<div class="projectInformation">
+  <p>
+    <strong>Description:</strong>
+    <%= @project.projectDescription %>
+  </p>
+
+  <p>
+    <strong>Client:</strong>
+    <%= @project.projectClient %>
+  </p>
+
+  <p>
+    <strong>Collaborators:</strong>
+    <%= @project.projectCollaborators %>
+  </p>
+
+  <p>
+    <strong>Project date:</strong>
+    <%= @project.projectStart %> to <%= @project.projectEnd %>
+  </p>
+
+  <p>
+    <strong>End:</strong>
+  </p>
+
+  <p>
+    <strong>More information:</strong>
+    <%=link_to "Project site", @project.projectLink %>
+  </p>
+
+  <p>
+    <strong>tag:</strong>
+    <%= @project.projectTag %>
+  </p>
+</div>
+
+
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %>

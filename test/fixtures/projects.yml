@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  projectName: MyString
+  projectImage: MyString
+  projectDescription: MyString
+  projectClient: MyString
+  projectCollaborators: MyString
+  projectStart: 2015-12-27
+  projectEnd: 2015-12-27
+  projectLink: MyString
+  projectTag: MyString
+
+two:
+  projectName: MyString
+  projectImage: MyString
+  projectDescription: MyString
+  projectClient: MyString
+  projectCollaborators: MyString
+  projectStart: 2015-12-27
+  projectEnd: 2015-12-27
+  projectLink: MyString
+  projectTag: MyString

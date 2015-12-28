@@ -99,3 +99,30 @@ margin-right: -15px !important;
 .navbar-right {
 float: right!important;
 }
+
+/* project-item */
+.header img {
+  margin: 8px 0 0 0;
+}
+
+.destination img {
+  width: 100%;
+}
+
+.tags{
+  margin: 10px 0;
+}
+
+.card {
+  color: #fff;
+  display: block;
+  margin: 4px 0;
+}
+
+.tags img,
+.tag img {
+  display:block;
+  width:100% \9;
+  max-width:100%;
+  height:auto
+}
