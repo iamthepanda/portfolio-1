@@ -4,10 +4,11 @@ one:
   projectName: MyString
   projectImage: MyString
   projectDescription: MyString
+  projectRole: MyString
   projectClient: MyString
   projectCollaborators: MyString
-  projectStart: 2015-12-27
-  projectEnd: 2015-12-27
+  projectStart: 2015-12-28
+  projectEnd: 2015-12-28
   projectLink: MyString
   projectTag: MyString
 
@@ -15,9 +16,10 @@ two:
   projectName: MyString
   projectImage: MyString
   projectDescription: MyString
+  projectRole: MyString
   projectClient: MyString
   projectCollaborators: MyString
-  projectStart: 2015-12-27
-  projectEnd: 2015-12-27
+  projectStart: 2015-12-28
+  projectEnd: 2015-12-28
   projectLink: MyString
   projectTag: MyString

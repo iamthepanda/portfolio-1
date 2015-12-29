@@ -18,7 +18,7 @@ class ProjectsControllerTest < ActionController::TestCase
 
   test "should create project" do
     assert_difference('Project.count') do
-      post :create, project: { projectClient: @project.projectClient, projectCollaborators: @project.projectCollaborators, projectDescription: @project.projectDescription, projectEnd: @project.projectEnd, projectImage: @project.projectImage, projectLink: @project.projectLink, projectName: @project.projectName, projectStart: @project.projectStart, projectTag: @project.projectTag }
+      post :create, project: { projectClient: @project.projectClient, projectCollaborators: @project.projectCollaborators, projectDescription: @project.projectDescription, projectEnd: @project.projectEnd, projectImage: @project.projectImage, projectLink: @project.projectLink, projectName: @project.projectName, projectRole: @project.projectRole, projectStart: @project.projectStart, projectTag: @project.projectTag }
     end
 
     assert_redirected_to project_path(assigns(:project))
@@ -35,7 +35,7 @@ class ProjectsControllerTest < ActionController::TestCase
   end
 
   test "should update project" do
-    patch :update, id: @project, project: { projectClient: @project.projectClient, projectCollaborators: @project.projectCollaborators, projectDescription: @project.projectDescription, projectEnd: @project.projectEnd, projectImage: @project.projectImage, projectLink: @project.projectLink, projectName: @project.projectName, projectStart: @project.projectStart, projectTag: @project.projectTag }
+    patch :update, id: @project, project: { projectClient: @project.projectClient, projectCollaborators: @project.projectCollaborators, projectDescription: @project.projectDescription, projectEnd: @project.projectEnd, projectImage: @project.projectImage, projectLink: @project.projectLink, projectName: @project.projectName, projectRole: @project.projectRole, projectStart: @project.projectStart, projectTag: @project.projectTag }
     assert_redirected_to project_path(assigns(:project))
   end
 

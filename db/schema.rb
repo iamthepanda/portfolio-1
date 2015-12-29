@@ -11,12 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151228025757) do
+ActiveRecord::Schema.define(version: 20151229064730) do
 
   create_table "projects", force: :cascade do |t|
     t.string   "projectName"
     t.string   "projectImage"
     t.string   "projectDescription"
+    t.string   "projectRole"
     t.string   "projectClient"
     t.string   "projectCollaborators"
     t.date     "projectStart"

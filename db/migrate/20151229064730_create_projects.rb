@@ -4,6 +4,7 @@ class CreateProjects < ActiveRecord::Migration
       t.string :projectName
       t.string :projectImage
       t.string :projectDescription
+      t.string :projectRole
       t.string :projectClient
       t.string :projectCollaborators
       t.date :projectStart

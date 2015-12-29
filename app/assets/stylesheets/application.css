@@ -101,13 +101,6 @@ float: right!important;
 }
 
 /* project-item */
-.header img {
-  margin: 8px 0 0 0;
-}
-
-.destination img {
-  width: 100%;
-}
 
 .tags{
   margin: 10px 0;
@@ -123,6 +116,27 @@ float: right!important;
 .tag img {
   display:block;
   width:100% \9;
+  max-width:100%;
+  height:auto
+}
+
+th {
+  margin: 10px;
+}
+
+tr {
+
+  vertical-align: top;
+  text-align: left;
+}
+
+td p {
+  margin: 20px 10px;
+}
+
+td img {
+  margin: 20px 10px;
+  display:block;
   max-width:100%;
   height:auto
 }
