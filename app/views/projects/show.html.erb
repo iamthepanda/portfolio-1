@@ -46,6 +46,6 @@
   </p>
 </div>
 
-<!-- 
-<%= link_to 'Edit', edit_project_path(@project) %> |
-<%= link_to 'Back', projects_path %> -->
+<%if current_user %>
+  <%= link_to 'Edit', edit_project_path(@project) %>
+<%end%>

@@ -25,15 +25,15 @@
         <td><%=link_to image_tag(project.projectImage, size: "300", alt: "Edit Entry"), project %></td>
         <!-- <td><%= project.projectDescription %></td> -->
         <td><p>Worked as a <%= project.projectRole %> for <% if project.projectClient != ""%><%=project.projectClient%><%else%><%concat" my personal project"%><%end%>.<br />Released on <%=link_to URI.parse(project.projectLink).host, project.projectLink%>.<br />Click <%=link_to "here", project%> for more info.</p></td>
-        <!-- <td><%= project.projectClient %></td>
+     <!--    <td><%= project.projectClient %></td>
         <td><%= project.projectCollaborators %></td>
         <td><%= project.projectStart %></td>
         <td><%= project.projectEnd %></td>
         <td><%= project.projectLink %></td>
-        <td><%= project.projectTag %></td> --><!-- 
-        <td><%= link_to 'Show', project %></td>
-        <td><%= link_to 'Edit', edit_project_path(project) %></td>
-        <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+        <td><%= project.projectTag %></td> -->
+        <%if current_user%>
+        <td><%= link_to 'Delete', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <%end%>
       </tr>
     <% end %>
   </tbody>
