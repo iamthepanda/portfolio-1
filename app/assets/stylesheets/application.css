@@ -29,26 +29,11 @@ body {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  /* Negative indent footer by its height */
-  margin: 0 auto -60px;
-  /* Pad bottom by footer height */
-  padding: 0 0 60px;
 }
-
-/* Set the fixed height of the footer here */
-#footer {
-  height: 60px;
-  background-color: #f5f5f5;
-}
-
 
 /* Custom page CSS
 -------------------------------------------------- */
 /* Not required for template or sticky footer method. */
-
-#wrap > .container {
-  padding: 60px 30px 0;
-}
 
 /*smaller sized screens*/
 @media (min-width: 992px) {
@@ -56,7 +41,7 @@ body {
     width: 680px;
   }
 }
-/*general heading*/
+/*general heading and styling*/
 h1,
 h2,
 h3,
@@ -73,6 +58,34 @@ h6,
   color: #3498db;
 }
 
+li a,
+p.footer-links a,
+p.footer-links p {
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;  
+}
+
+
+.navbar-header a.navbar-brand {
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+  background-color: #3498db;
+  color: #fff;
+  border-right: 2px solid #2980b9;
+  border-bottom: 2px solid #2980b9;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding-top: 10px;
+}
+
+.navbar-header a.navbar-brand:hover {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.navbar-default {
+  border-radius: 15px;
+  margin: 20px;
+}
+
 p, div {
   font-size: 12px;
   font-weight: 300;
@@ -84,7 +97,7 @@ p, div {
 }
 
 /* disable collapse */
-.navbar-collapse.collapse {
+/*.navbar-collapse.collapse {
 display: block!important;
 }
 
@@ -98,6 +111,90 @@ margin-right: -15px !important;
 
 .navbar-right {
 float: right!important;
+}*/
+
+/* footer */
+.footer-distributed{
+  background-color: #f8f8f8;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 45px 50px;
+  border: 1px solid #E7E7E7;
+}
+
+.footer-distributed .footer-left p{
+  color:  #8f9296;
+  font-size: 12px;
+  margin: 0;
+}
+
+/* Footer links */
+
+.footer-distributed p.footer-links{
+  font-size:16px;
+  font-weight: 400;
+  color:  #7f8c8d;
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+.footer-distributed p.footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: #7f8c8d;
+}
+
+.footer-distributed p.footer-links a:hover{
+  font-size:20px;
+  background-color: transparent;
+}
+
+.footer-distributed .footer-right{
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+.footer-distributed .footer-right a{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #3498db;
+  border-radius: 15px;
+
+  font-size: 15px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-left: 3px;
+}
+
+.footer-distributed .footer-right a:hover{
+  width: 35px;
+  height: 35px;
+  font-size: 20px;
+}
+
+@media (max-width: 600px) {
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-right{
+    text-align: center;
+  }
+
+  .footer-distributed .footer-right{
+    float: none;
+    margin: 0 auto 20px;
+  }
+
+  .footer-distributed .footer-left p.footer-links{
+    line-height: 1.8;
+  }
 }
 
 /* project-item */
@@ -130,11 +227,11 @@ tr {
   text-align: left;
 }
 
-td p {
+.row .col-sm-6 p {
   margin: 20px 10px;
 }
 
-td img {
+.row .col-sm-6 img {
   margin: 20px 10px;
   display:block;
   max-width:100%;

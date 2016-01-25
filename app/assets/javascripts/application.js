@@ -14,3 +14,9 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+function changeDiv() {
+  var messages = ["Error 404: job not found", "I be needin' a job arrgh!", "Nicu: LF> a job", "Will work for pizza."];
+  var randMessage = messages[Math.floor(Math.random() * messages.length)];
+  document.getElementById("message").innerHTML = randMessage;
+}
