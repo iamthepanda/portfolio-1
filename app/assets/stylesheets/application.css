@@ -31,29 +31,25 @@ body {
   height: 100%;
 }
 
-/* Custom page CSS
--------------------------------------------------- */
-/* Not required for template or sticky footer method. */
-
-/*smaller sized screens*/
 @media (min-width: 992px) {
   .container {
     width: 680px;
   }
 }
+
+@media (max-width: 600px) {
+  .container {
+    padding: 30px;
+  }
+}
+
 /*general heading and styling*/
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
+h6 {
   font-family: Georgia,Times,Times New Roman,serif; 
   color: #3498db;
 }
@@ -69,8 +65,6 @@ p.footer-links p {
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
   background-color: #3498db;
   color: #fff;
-  border-right: 2px solid #2980b9;
-  border-bottom: 2px solid #2980b9;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   padding-top: 10px;
@@ -84,16 +78,13 @@ p.footer-links p {
 .navbar-default {
   border-radius: 15px;
   margin: 20px;
+  border: 0;
 }
 
 p, div {
   font-size: 12px;
   font-weight: 300;
-  color: #7f8c8d;
-}
-
-.container .credit {
-  margin: 10px 0;
+  color: #555;
 }
 
 /* disable collapse */
@@ -112,6 +103,20 @@ margin-right: -15px !important;
 .navbar-right {
 float: right!important;
 }*/
+
+a.btn.btn-primary {
+  height: 70px;
+  line-height: 60px;
+  font-size: 24px;
+  background-color: #3498db;
+  color: #fff;
+  border:0;
+}
+
+a.btn.btn-primary:hover {
+  background-color: #2980b9;
+  border:0;
+}
 
 /* footer */
 .footer-distributed{
@@ -197,6 +202,34 @@ float: right!important;
   }
 }
 
+/* resume */
+@media screen and (max-width: 600px) {
+  #resume {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
+
+  #resume-small {
+    padding-top: 30px;
+    visibility: visible;
+  }
+}
+
+/* resume */
+@media screen and (min-width: 600px) {
+  #resume {
+    visibility: visible;
+  }
+
+  #resume-small {
+    visibility: hidden;
+  }
+}
+
 /* project-item */
 
 .tags{
@@ -215,16 +248,6 @@ float: right!important;
   width:100% \9;
   max-width:100%;
   height:auto
-}
-
-th {
-  margin: 10px;
-}
-
-tr {
-
-  vertical-align: top;
-  text-align: left;
 }
 
 .row .col-sm-6 p {
